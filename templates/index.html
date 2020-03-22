@@ -34,9 +34,8 @@
           </p>
       </div>
   </div>
-
-  <div class="columns has-same-height">
-      <!-- Profile -->
+  <!-- Profile -->
+  <div class="columns has-same-height"> 
       <div class="column">
           <div class="card">
               <div class="card-content">
@@ -50,10 +49,6 @@
                           <tr>
                               <td>Donde <i class="fas fa-home"></i></td>
                               <td>Tegucigalpa</td>
-                          </tr>
-                          <tr>
-                              <td>Nose</td>
-                              <td>0123-456789</td>
                           </tr>
                           <tr>
                               <td>Correo <i class="far fa-envelope"></i></td>
@@ -77,13 +72,44 @@
       <div class="column">
           <div class="card">
               <div class="card-image">
-                  <figure class="image is-square	">
-                      <img src="https://www.gravatar.com/userimage/118128592/f3869842f7ef339d28fa502d76e745d7" 
+                  <figure class="image is-square">
+                      <img src="{{ url_for('static', filename='images/jose.jpg') }}" 
                         alt="Jose Vega">
                   </figure>
               </div>
           </div>
       </div>
+      <!-- Something Extra -->
+      <div class="column">
+        <div class="card">
+          <div class="hero-foot">
+            <nav class="tabs is-boxed">
+              <div class="container">
+                <ul>
+                  <li class="tab is-active" onclick="openTab(event,'WebDev')">
+                    <a class=>Web Development</a>
+                  </li>
+                  <li class="tab" onclick="openTab(event,'WebAud')">
+                    <a class=>Website Audit</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="container section">
+            <div id="WebDev" class="content-tab" >
+              <p>
+                Overview Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+            <div id="WebAud" class="content-tab" style="display:none">
+              <p>
+                Details Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
   </div>
   <div class="columns">
     <!-- Skills -->
@@ -234,7 +260,6 @@
     </div>
   </div>
 </section>
-
 <!-- Resume -->
 <section class="section" id="resume">
   <div class="section-heading">
@@ -248,7 +273,6 @@
     </a>
   </div>
 </section>
-
 <!-- Portfolio -->
 <section class="section" id="portfolio">
   <div class="section-heading is-primary">
@@ -259,73 +283,73 @@
     <p class="panel-heading">
       Dale click para verlos
     </p>
-    <a class="panel-block" href="https//:www.safetyspot.com/">
+    <a class="panel-block" href="https//:www.safetyspot.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-rails-plain-wordmark colored"></i>
       </span>
       SafetySpot
     </a>
-    <a class="panel-block" href="https://another-vue-weather-app.netlify.com/">
+    <a class="panel-block" href="https://another-vue-weather-app.netlify.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-vuejs-plain-wordmark colored"></i>
       </span>
       Weather App
     </a>
-    <a class="panel-block" href="https://upbeat-meitner-732194.netlify.com/">
+    <a class="panel-block" href="https://upbeat-meitner-732194.netlify.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-react-original-wordmark colored"></i>
       </span>
       Meditation App
     </a>
-    <a class="panel-block" href="https://upbeat-meitner-732194.netlify.com/">
+    <a class="panel-block" href="https://upbeat-meitner-732194.netlify.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-python-plain-wordmark colored"></i>
       </span>
       This Page!
     </a>
-    <a class="panel-block" href="https://another-weather-app.herokuapp.com/">
+    <a class="panel-block" href="https://another-weather-app.herokuapp.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-javascript-plain"></i>
       </span>
       Another Weather App
     </a>
-    <a class="panel-block" href="https://bacon-text.herokuapp.com/">
+    <a class="panel-block" href="https://bacon-text.herokuapp.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-rails-plain-wordmark colored"></i>
       </span>
       A Text Generator
     </a>
-    <a class="panel-block" href="https://flask-question-app.herokuapp.com/">
+    <a class="panel-block" href="https://flask-question-app.herokuapp.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-python-plain-wordmark colored"></i>
       </span>
       A Question & Answer App
     </a>
-    <a class="panel-block" href="https://jose-vega-blog.herokuapp.com/">
+    <a class="panel-block" href="https://jose-vega-blog.herokuapp.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-rails-plain-wordmark colored"></i>
       </span>
       A Blog
     </a>
-    <a class="panel-block" href="https://jose-vega-resume.herokuapp.com/">
+    <a class="panel-block" href="https://jose-vega-resume.herokuapp.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-bootstrap-plain-wordmark colored"></i>
       </span>
       My Online Resume
     </a>
-    <a class="panel-block" href="https://medinota.herokuapp.com/">
+    <a class="panel-block" href="https://medinota.herokuapp.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-rails-plain-wordmark colored"></i>
       </span>
       A note taking App for doctors
     </a>
-    <a class="panel-block" href="https://my-next-idea.herokuapp.com/">
+    <a class="panel-block" href="https://my-next-idea.herokuapp.com/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-rails-plain-wordmark colored"></i>
       </span>
       A PWA Template
     </a>
-    <a class="panel-block" href="https://josevegadev.site/">
+    <a class="panel-block" href="https://josevegadev.site/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-wordpress-plain-wordmark colored"></i>
       </span>
@@ -333,4 +357,21 @@
     </a>
   </article>
 </section>
+
+<script>
+  function openTab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("content-tab");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " is-active";
+}
+</script>
+
 {% endblock %}
