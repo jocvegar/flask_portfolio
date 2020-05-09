@@ -13,7 +13,7 @@
                 Jose Vega
             </h1>
             <h2 class="subtitle is-3">
-                Diseñador FullStack
+                Desarrollador FullStack
             </h2>
         </div>
     </div>
@@ -25,17 +25,17 @@
   <div class="section-heading">
       <h3 class="title is-2">Acerca De Mi</h3>
       <br>
-      <h4 class="subtitle is-5">A passionate full-stack web developer.</h4>
+      <h4 class="subtitle is-5">Un Desarrollador Full-Stack.</h4>
       <div class="container">
-          <p>
-              Un desarollador full-stack con más de <strong>3 años</strong> de experiencia en todo el stack.  
+          <p class="is-size-5">
+              Un desarollador full-stack apasionado con más de <strong>3 años</strong> de experiencia en todo el stack.
               Extenso conocimiento en técnicas modernas de desarollado web y un amor por el <strong>té de menta</strong>.
-              En busca de como poder ayudar a desarrollar las herramientas del mañana y como poder mejorar el bienestar general.              
+              Aprendiendo las tecnologías modernas para propulsionar las marcas y negocios del mañana.
           </p>
       </div>
   </div>
   <!-- Profile -->
-  <div class="columns has-same-height"> 
+  <div class="columns has-same-height">
       <div class="column">
           <div class="card">
               <div class="card-content">
@@ -53,6 +53,11 @@
                           <tr>
                               <td><i class="far fa-envelope"></i></td>
                               <td>jocvegar@gmail.com</td>
+                          </tr>
+                          <tr>
+                              <td><i class="fas fa-pen"></i></td>
+                              <td><a href="https://jv-blog.netlify.app/"
+                                target="_blank">Blog</a></td>
                           </tr>
                       </table>
                   </div>
@@ -73,7 +78,7 @@
           <div class="card">
               <div class="card-image">
                   <figure class="image is-square">
-                      <img src="{{ url_for('static', filename='images/jose.jpg') }}" 
+                      <img src="{{ url_for('static', filename='images/jose.jpg') }}"
                         alt="Jose Vega">
                   </figure>
               </div>
@@ -100,16 +105,18 @@
             <div id="WebDev" class="content-tab" >
               <ul>
                 <li><strong>Backend</strong> Flask</li>
+                <br>
                 <li><strong>Frontend</strong> Bulma <i class="devicon-css3-plain-wordmark colored"></i>
                 </li>
-                <li><strong>CodeEditor</strong> 
+                <br>
+                <li><strong>CodeEditor</strong>
                   VS Code <i class="devicon-visualstudio-plain colored"></i>
                 </li>
               </ul>
             </div>
             <div id="WebAud" class="content-tab" style="display:none">
               <p>
-                Deployed usando <strong>Heroku <i class="devicon-heroku-line-wordmark colored"></i>
+                Hospedado en <strong>Heroku <i class="devicon-heroku-line-wordmark colored"></i>
                 </strong>
               </p>
             </div>
@@ -165,7 +172,19 @@
               <div class="media-content">
                 <div class="content">
                   <p>
-                    <strong>React.js:</strong>
+                    <strong>JavaScript:</strong>
+                    <br>
+                    <progress class="progress is-primary" value="100" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Vue.js:</strong>
                     <br>
                     <progress class="progress is-primary" value="70" max="100"></progress>
                   </p>
@@ -177,7 +196,7 @@
               <div class="media-content">
                 <div class="content">
                   <p>
-                    <strong>Vue.js:</strong>
+                    <strong>React.js:</strong>
                     <br>
                     <progress class="progress is-primary" value="65" max="100"></progress>
                   </p>
@@ -213,7 +232,7 @@
               <div class="media-content">
                 <div class="content">
                   <p>
-                    <strong>Djando:</strong>
+                    <strong>Django:</strong>
                     <br>
                     <progress class="progress is-primary" value="40" max="100"></progress>
                   </p>
@@ -240,7 +259,7 @@
 </section>
 
 <!-- Services -->
-<section class="section" id="services">
+<section class="section" id="services" style="background-color:#fbfbfb">
   <div class="section-heading">
     <h3 class="title is-2">Servicios</h3>
     <h4 class="subtitle is-5">¿Qué Puedo Hacer Para Tí?</h4>
@@ -286,7 +305,7 @@
     <h4 class="subtitle is-5">Algunos de mis trabajos</h4>
   </div>
   <article class="panel is-primary">
-    <p class="panel-heading">
+    <p class="panel-heading has-text-centered">
       Dale click para verlos
     </p>
     <a class="panel-block" href="https//:www.safetyspot.com/" target="_blank">
@@ -315,7 +334,7 @@
     </a>
     <a class="panel-block" href="https://another-weather-app.herokuapp.com/" target="_blank">
       <span class="panel-icon is-size-3">
-        <i class="devicon-javascript-plain"></i>
+        <i class="devicon-javascript-plain colored"></i>
       </span>
       Another Weather App
     </a>
@@ -377,25 +396,55 @@
       <span class="panel-icon is-size-3">
         <i class="devicon-react-original-wordmark colored"></i>
       </span>
-      To Do List 
+      To Do List
     </a>
     <a class="panel-block" href="https://jocvegar.github.io/todo_app_react_2/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-react-original-wordmark colored"></i>
       </span>
-      Another To Do List 
+      Another To Do List
     </a>
     <a class="panel-block" href="https://jocvegar.github.io/sound_tapper/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-javascript-plain colored"></i>
       </span>
-      Another To Do List 
+      Sounda Tapper
     </a>
     <a class="panel-block" href="https://jocvegar.github.io/react_autocomplete/" target="_blank">
       <span class="panel-icon is-size-3">
         <i class="devicon-react-original-wordmark colored"></i>
       </span>
       AutoComple
+    </a>
+    <a class="panel-block" href="https://url-shortener-ts.herokuapp.com/" target="_blank">
+      <span class="panel-icon is-size-3">
+        <i class="devicon-typescript-plain colored"></i>
+      </span>
+      URL Shortener
+    </a>
+    <a class="panel-block" href="https://be-happy-ok.netlify.com/" target="_blank">
+      <span class="panel-icon is-size-3">
+        <i class="devicon-vuejs-plain-wordmark colored"></i>
+      </span>
+      Feel Good!
+    </a>
+    <a class="panel-block" href="https://jv-blog.netlify.app/" target="_blank">
+      <span class="panel-icon is-size-3">
+        <i class="devicon-vuejs-plain-wordmark colored"></i>
+      </span>
+      Un Blog
+    </a>
+    <a class="panel-block" href="https://honduras-cv-19.netlify.com/" target="_blank">
+      <span class="panel-icon is-size-3">
+        <i class="devicon-vuejs-plain-wordmark colored"></i>
+      </span>
+      Rastreo de Covid en Honduras
+    </a>
+    <a class="panel-block" href="https://honduras-cv-19.netlify.com/" target="_blank">
+      <span class="panel-icon is-size-3">
+        <i class="devicon-python-plain-wordmark colored"></i>
+      </span>
+      Landing Page
     </a>
   </article>
 </section>
